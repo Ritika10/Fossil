@@ -1,0 +1,14 @@
+Purge :
+  ** Moves the data into the graveyard
+  - fossil purge files {names}
+    - Can even be used for directories
+  - fossil purge list
+  - fossil purge obliterate
+  - fossil purge checkins [tags]
+  - fossil purge undo ID : Recoved that particular ID of the purge
+  - fossil obliterate ID : Complete remove that purge, be careful
+
+  ** My Comments
+    - Need to clean up the files manually as well
+    - Purging happens only in local clone copy and never syncs back. Need to copy back the clone to central repo
+    - "fossil rebuild --vacuum" if any commit failures
